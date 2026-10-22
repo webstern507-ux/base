@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Croox Galaxy</title>
+
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  
+    <div class="header">
+        <h1>CROOX</h1>
+    </div>
+
+   
+    <nav class="navbar">
+       
+        <a href="Beat.html">Home</a>
+        <a href="bade.html">Form</a>
+        <a href="cape kt.html">About</a>
+       
+    </nav>
+    
+   
+		
+
+    
+    <div class="banner">
+
+        <h2>Case Croox</h2>
+
+        <p>
+            <i>Ready for some fun...Click below </i>
+        </p>
+ 
+             <a href="content.html">
+            <button type="button">MAT</button>
+        </a>
+
+    </div>
+
+      
+  <input type="text" id="searchBar" onkeyup="filterContent()" placeholder="Type to reveal content...">
+
+  <ul id="contentList">
+    <li class="content-item">
+      <h3>HTML Structure</h3>
+      <p>Learn how to use paragraphs, headings, and layout tags.</p>
+    </li>
+    <li class="content-item">
+      <h3>Online Games</h3>
+       <a href=" https://www.izzygames.com/games/free"> Click to play</a>
+            
+    <li class="content-item">
+      <h3>Online Bet</h3>
+       <a href="https://www.worldsportsbetting.co.za ">Bet now</a>
+    </li>
+    <li class="content-item">
+      <h3>UMP Library</h3>
+       <a href ="https://library.ump.ac.za">Jump</a>
+    </li>
+    <li class="content-item">
+      <h3>GDE Content</h3>
+      <a href="https://gdecontent.co.za  ">click</a>
+      
+    </li>
+  </ul>
+
+  <script>
+    function filterContent() {
+      let query = document.getElementById('searchBar').value.toLowerCase();
+      let items = document.getElementsByClassName('content-item');
+      
+      for (let i = 0; i < items.length; i++) {
+        let textContent = items[i].innerText.toLowerCase();
+        
+        // If the search bar is completely empty, make sure EVERYTHING stays hidden
+        if (query.trim() === "") {
+          items[i].style.display = "none";
+        } 
+        // Otherwise, only show the item if it matches the text query
+        else if (textContent.includes(query)) {
+          items[i].style.display = "block"; // Reveals the matching item
+        } 
+        // Hide it if it doesn't match the query
+        else {
+          items[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+
+
+<img src="wap.jpeg" alt="Summary of what we offer at Croox Galaxy" width="500">
+
+
+
+
+
+    <div class="footer">
+
+        <p>Croox Galaxy | 2018</p>
+
+        <p>
+            Email: Crooxgalaxy.co.za 
+        </p>
+        <p>
+            Phone : 011 573 78021
+        </p>
+
+    </div>
+
+
